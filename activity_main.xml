@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hemanth.codeforgood.MainActivity">
+
+
+
+    <EditText
+        android:id="@+id/etEmailId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Email Id"
+        android:textColor="#282A65"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="20dp"/>
+
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        android:textColor="#282A65"
+        android:inputType="textPassword"
+        android:textSize="20dp"
+        android:layout_below="@+id/etEmailId"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/bSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:background="#282A65"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/twregister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="Register"
+        android:textColor="#282A65"
+        android:textSize="20dp"
+        android:layout_below="@+id/etPassword"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="51dp" />
+
+    <TextView
+        android:id="@+id/twadmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="Admin Login"
+        android:textColor="#282A65"
+        android:textSize="20dp"
+        android:layout_below="@+id/etPassword"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="135dp" />
+</RelativeLayout>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="hemanth.codeforgood.RegistrationActivity"
+    >
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4.32" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="05dp"
+                    android:textColor="#3F51B5"
+                    android:text="Scribe"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textStyle="bold"
+                    android:layout_weight="0.89"
+                    android:background="#B2BEB5"/>
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="198dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="05dp"
+                    android:text="Student"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+
+                    android:textColor="#3F51B5"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="05dp"
+                android:textColor="#3F51B5"
+                android:text="Enter User Name :"
+
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/username"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:ems="10"
+                    android:hint="enter username">
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="05dp"
+                android:text="Password"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+
+                android:textColor="#3F51B5"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="05dp"
+                android:textColor="#3F51B5"
+                android:text="Location"
+
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/location"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+
+                android:ems="10"
+                android:hint="Location"
+                />
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="05dp"
+                    android:textColor="#3F51B5"
+                    android:text="Language"
+
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/language"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+
+                    android:ems="10"
+                    android:hint="Language"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="05dp"
+                    android:textColor="#3F51B5"
+                    android:text="Gender :"
+
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/gender"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+
+                    android:ems="10"
+                    android:hint="Gender"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <Button
+                        android:id="@+id/submit"
+                        android:layout_width="120dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="30dp"
+                        android:text="submit"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
