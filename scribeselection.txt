@@ -1,6 +1,6 @@
 algorithm for scribe selection
 
-1.preference of the student
+//1.preference of the student
 2. qualification
 3.location
 4.gender
@@ -10,7 +10,7 @@ if(username==pref_student)
 {
 notify.scr_username
 }
-if(scr_qualification==student_qualification)
+if(scr_qualificationid<examid)
 {
   if(scr_location==student_loc)
   {
