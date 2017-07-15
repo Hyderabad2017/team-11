@@ -16,6 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".registationadd" />
+        <activity
+            android:name=".registration"
+            android:label="@string/title_activity_registration"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>
