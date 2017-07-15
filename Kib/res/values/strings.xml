@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">KibButz</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_register_list">RegisterList</string>
+    <string name="title_activity_login_list">LoginList</string>
+    <string name="title_activity_admin">AdminActivity</string>
+    <string name="title_activity_admin_home">AdminHome</string>
+    <string name="title_activity_add_aadhar">AddAadhar</string>
+    <string name="title_activity_contributor_register">ContributorRegister</string>
+    <string name="title_activity_villager_register">VillagerRegister</string>
+    <string name="title_activity_villager_login">VillagerLogin</string>
+    <string name="title_activity_contributor_login">ContributorLogin</string>
+    <string name="title_activity_villager_home">VillagerHome</string>
+    <string name="title_activity_upload_problem">UploadProblem</string>
+    <string name="title_activity_balance">Balance</string>
+    <string name="title_activity_add_pan">AddPan</string>
+    <string name="title_activity_contributor_home">ContributorHome</string>
+    <string name="title_activity_problem_info">ProblemInfo</string>
+    <string name="title_activity_problem_details">ProblemDetails</string>
+    <string name="title_activity_info_problem">InfoProblem</string>
+    <string name="title_activity_balance_contributor">BalanceContributor</string>
+    <string name="title_activity_advice_details">AdviceDetails</string>
+    <string name="title_activity_help">HelpActivity</string>
+    <string name="title_activity_give_advice">GiveAdvice</string>
+    <string name="title_activity_transfer_money">TransferMoney</string>
+
+</resources>
