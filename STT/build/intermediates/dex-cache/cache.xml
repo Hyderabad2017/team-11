@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Lenovo\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.2.0\support-annotations-23.2.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="c5bf571bb10462bd90e5419ade67793f71acbc87">
+        <dex dex="C:\Users\Lenovo\AndroidStudioProjects\STT\app\build\intermediates\pre-dexed\debug\support-annotations-23.2.0_91c6a92778568e68051fd24139b8cd978a2983d3.jar" />
+    </item>
+    <item
+        jar="C:\Users\Lenovo\AndroidStudioProjects\STT\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8c108c22c99e794eff255bb34d2a461200c4cbb0">
+        <dex dex="C:\Users\Lenovo\AndroidStudioProjects\STT\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-23.2.0_9b39bf736ff054e73d339083a72b955a6680fa81.jar" />
+    </item>
+    <item
+        jar="C:\Users\Lenovo\AndroidStudioProjects\STT\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="292a9fa091757208efa65e77eef63088247e51f3">
+        <dex dex="C:\Users\Lenovo\AndroidStudioProjects\STT\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.2.0_94dcba3ca0193cb0e4a7c3a1a9578099b18eb3b0.jar" />
+    </item>
+    <item
+        jar="C:\Users\Lenovo\AndroidStudioProjects\STT\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="e5f32fa48a3eb2de0c987025c11b6e3864b634d9">
+        <dex dex="C:\Users\Lenovo\AndroidStudioProjects\STT\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.2.0_1fde2c6e324b6885e1a17eb7b051803fe7e03a4d.jar" />
+    </item>
+    <item
+        jar="C:\Users\Lenovo\AndroidStudioProjects\STT\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="6e3578f92f7462d1a935a1d36173e3bdd1234976">
+        <dex dex="C:\Users\Lenovo\AndroidStudioProjects\STT\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.2.0_3433369912bd281b90265978d5f6a4b455dd4955.jar" />
+    </item>
+    <item
+        jar="C:\Users\Lenovo\AndroidStudioProjects\STT\app\build\intermediates\exploded-aar\com.android.support\design\23.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="1aa5b025efe97f5006f5be16d6ca67c6c3c0c0d8">
+        <dex dex="C:\Users\Lenovo\AndroidStudioProjects\STT\app\build\intermediates\pre-dexed\debug\com.android.support-design-23.2.0_c0a50be3e7bc3e92d3960894245c5f757bd689ae.jar" />
+    </item>
+    <item
+        jar="C:\Users\Lenovo\AndroidStudioProjects\STT\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="d4c936aa8c7d2522c82e3f1829c791d9e367f009">
+        <dex dex="C:\Users\Lenovo\AndroidStudioProjects\STT\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-23.2.0_5e4de94e9f1748bcaf60e72a42f4d3044f2f5a6d.jar" />
+    </item>
+    <item
+        jar="C:\Users\Lenovo\AndroidStudioProjects\STT\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.0\jars\libs\internal_impl-23.2.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="6e239441500605809818997dd63b62a947195f8c">
+        <dex dex="C:\Users\Lenovo\AndroidStudioProjects\STT\app\build\intermediates\pre-dexed\debug\internal_impl-23.2.0_34e0bf47a38483317e491ef6d2bb69c7962cee30.jar" />
+    </item>
+
+</items>
