@@ -1,0 +1,57 @@
+public class MainActivity extends AppCompatActivity {
+    private TextView resultTEXT;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        resultTEXT=(TextView)findViewById(R.id.TVresult);
+    }
+
+    public void onButtonClick(View v)
+    {
+        if(v.getId()==R.id.button)
+        {
+
+            promptSpeechInput();
+        }
+    }
+
+    private void promptSpeechInput() {
+        Intent i = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
+        i.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL , RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
+        i.putExtra(RecognizerIntent.EXTRA_LANGUAGE, Locale.getDefault());
+        i.putExtra(RecognizerIntent.EXTRA_PROMPT, "Say smthng");
+
+        try{
+            startActivityForResult(i,100);
+        }
+        catch (ActivityNotFoundException a)
+        {
+            Toast.makeText(MainActivity.this , "Sorry",Toast.LENGTH_LONG).show();
+        }
+    }
+
+    public void onActivityResult(int request_code,int result_code,Intent i)
+    {
+        super.onActivityResult(request_code,result_code,i);
+
+        switch (request_code)
+        {
+            case 100:if(result_code == RESULT_OK && i!=null)
+            {
+                ArrayList<String> result = i.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
+                resultTEXT.setText(result.get(0));
+            }
+                break;
+        }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+
+}

@@ -1,0 +1,45 @@
+<EditText
+    android:id="@+id/editText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:hint="Exam "
+    android:inputType="textPersonName"
+    tools:layout_editor_absoluteX="71dp"
+    tools:layout_editor_absoluteY="48dp" />
+
+<EditText
+    android:id="@+id/editText2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:hint="Location"
+    android:inputType="textPersonName"
+    tools:layout_editor_absoluteX="71dp"
+    tools:layout_editor_absoluteY="148dp" />
+
+<EditText
+    android:id="@+id/editText5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:inputType="date"
+    tools:layout_editor_absoluteX="71dp"
+    tools:layout_editor_absoluteY="251dp" />
+
+<EditText
+    android:id="@+id/editText6"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:inputType="time"
+    tools:layout_editor_absoluteX="71dp"
+    tools:layout_editor_absoluteY="352dp" />
+
+<Button
+    android:id="@+id/button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Send Request"
+    tools:layout_editor_absoluteX="115dp"
+    tools:layout_editor_absoluteY="434dp" />
