@@ -4,6 +4,7 @@ package com.example.sumanth.studentmainpage;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -39,9 +40,12 @@ import static com.example.sumanth.studentmainpage.StudentMainPage.examName;
  */
 
 public class Request extends Fragment {
-    private static void loadSpinnerData(View rootView) {
+
+
+    private static void loadSpinnerData(final View rootView) {
+
         final List<String> spinnerArray =  new ArrayList<>();
-        RestAdapter api = new RestAdapter.Builder().setEndpoint("http://10.49.181.118/StudentMainPage").build();
+        RestAdapter api = new RestAdapter.Builder().setEndpoint("http://hemanthraparthi.000webhostapp.com/CodeForGood/StudentMainPage").build();
         Student_Main_Retro ai = api.create(Student_Main_Retro.class);
         //Retrieve from DB and add to spinnerArray
         ai.spn_pop(new Callback<JsonElement>() {
@@ -67,7 +71,8 @@ public class Request extends Fragment {
 
             @Override
             public void failure(RetrofitError error) {
-
+                Toast.makeText(rootView.getContext(), error.toString(), Toast.LENGTH_LONG).show();
+                Log.e(null,error.getMessage());
             }
         });
 
@@ -80,12 +85,12 @@ public class Request extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState){
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
        View rootView = inflater.inflate(R.layout.request, container, false);
-                    Spinner spn=(Spinner) rootView.findViewById(R.id.exam_spn);
-                    loadSpinnerData(rootView);
-                    spn.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-                        @Override
+        Spinner spn=(Spinner) rootView.findViewById(R.id.exam_spn);
+        loadSpinnerData(rootView);
+        spn.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
                         public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                             examName = String.valueOf(adapterView.getSelectedItem());
                         }
@@ -98,14 +103,14 @@ public class Request extends Fragment {
                     final EditText medium=(EditText)rootView.findViewById(R.id.med_txt);
                     final EditText date=(EditText)rootView.findViewById(R.id.date_txt);
                     final EditText city=(EditText)rootView.findViewById(R.id.city_txt);
-                    final DateFormat df = new SimpleDateFormat("MM/dd/yyyy");
+                    final DateFormat df = new SimpleDateFormat("dd/MM/yyyy");
                     final Date[] date1 = new Date[1];
                     //send the examName , medium, date, city to the database
                     Button request=(Button)rootView.findViewById(R.id.req_btn);
                     request.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(final View view) {
-                            RestAdapter api = new RestAdapter.Builder().setEndpoint("http://10.49.181.118/StudentMainPage").build();
+                            RestAdapter api = new RestAdapter.Builder().setEndpoint("http://hemanthraparthi.000webhostapp.com/CodeForGood/StudentMainPage").build();
                             Student_Main_Retro ai = api.create(Student_Main_Retro.class);
                             try {
                                 date1[0] =df.parse(date.getText().toString());
@@ -114,8 +119,7 @@ public class Request extends Fragment {
                             }
                             ai.set_request(1,examName,
                                     Integer.parseInt(city.getText().toString()),
-                                    Integer.parseInt(medium.getText().toString()),
-                                    date1[0], new Callback<JsonElement>() {
+                                    Integer.parseInt(medium.getText().toString()), date1[0], new Callback<JsonElement>() {
                                         @Override
                                         public void success(JsonElement jsonElement, Response response) {
                                             Toast.makeText(view.getContext(), "", Toast.LENGTH_SHORT).show();

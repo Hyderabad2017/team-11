@@ -3,16 +3,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.sumanth.studentmainpage.StudentMainPage$PlaceholderFragment">
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
 
     <EditText
         android:id="@+id/med_txt"
         android:layout_width="250dp"
         android:layout_height="30dp"
-        android:visibility="visible"
         tools:ignore="LabelFor,TextFields"
         android:layout_alignBottom="@+id/textView2"
         android:layout_alignParentEnd="true"
-        android:layout_alignStart="@+id/req_btn" />
+        android:layout_marginBottom="13dp"
+        android:layout_alignTop="@+id/textView2" />
 
     <TextView
         android:id="@+id/exam_txt"
@@ -34,15 +40,15 @@
         android:layout_alignBaseline="@+id/textView4"
         android:layout_alignBottom="@+id/textView4"
         android:layout_alignEnd="@+id/med_txt"
-        android:layout_alignStart="@+id/req_btn" />
+        android:layout_alignStart="@+id/date_txt" />
 
     <Spinner
         android:id="@+id/exam_spn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/exam_txt"
-        android:layout_alignEnd="@+id/city_txt"
-        android:layout_alignStart="@+id/date_txt" />
+        android:layout_alignTop="@+id/exam_txt"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView2" />
 
     <TextView
         android:id="@+id/textView2"
@@ -51,8 +57,8 @@
         android:layout_below="@+id/exam_txt"
         android:layout_marginTop="22dp"
         android:layout_toStartOf="@+id/med_txt"
-        android:text="Medium Of Exam : "
-        android:textSize="25sp" />
+        android:text="Language : "
+        android:textSize="30sp" />
 
     <TextView
         android:id="@+id/textView3"
@@ -68,12 +74,12 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="63dp"
+        android:layout_marginTop="59dp"
         android:text="City : "
         android:textSize="36sp"
         tools:ignore="HardcodedText"
         android:layout_below="@+id/textView3"
-        android:layout_alignEnd="@+id/textView3" />
+        android:layout_alignStart="@+id/textView3" />
 
     <Button
         android:id="@+id/req_btn"
@@ -92,5 +98,8 @@
         android:ems="10"
         android:inputType="date"
         android:layout_alignEnd="@+id/med_txt"
-        android:layout_toEndOf="@+id/textView2" />
+        android:layout_toEndOf="@+id/textView2"
+        android:visibility="visible"/>
+</RelativeLayout>
+</ScrollView>
 </RelativeLayout>

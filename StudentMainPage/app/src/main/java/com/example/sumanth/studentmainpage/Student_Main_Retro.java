@@ -23,6 +23,9 @@ public interface Student_Main_Retro {
                      @Field("language") int total,
                      @Field("date")Date date, Callback<JsonElement> response);
 
+    @GET("/get_request.php")
+    void get_requests(Callback<JsonElement> response);
+
     @GET("/spn_pop.php")
     void spn_pop(Callback<JsonElement> response);
 

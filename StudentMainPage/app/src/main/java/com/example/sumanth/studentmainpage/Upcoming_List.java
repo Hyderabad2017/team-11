@@ -20,7 +20,7 @@ public class Upcoming_List extends BaseAdapter {
     LayoutInflater lin;
     Context con;
     public  ArrayList<String> ExamNames=new ArrayList<>();
-    public  ArrayList<Integer> Request_status=new ArrayList<>();
+    public  ArrayList<String> Request_status=new ArrayList<>();
 
     public Upcoming_List(Context con,ArrayList ExamNames, ArrayList Request_status){
         this.con=con;

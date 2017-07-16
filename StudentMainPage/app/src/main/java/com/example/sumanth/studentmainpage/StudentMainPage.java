@@ -1,47 +1,17 @@
 package com.example.sumanth.studentmainpage;
 
-import android.content.SharedPreferences;
+import android.os.Bundle;
 import android.support.design.widget.TabLayout;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.os.Bundle;
-import android.view.LayoutInflater;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ListView;
-import android.widget.Spinner;
-import android.widget.Toast;
 
-import com.google.gson.JsonElement;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-
-import retrofit.Callback;
-import retrofit.RestAdapter;
-import retrofit.RetrofitError;
-import retrofit.client.Response;
 
 
 public class StudentMainPage extends AppCompatActivity {
@@ -50,7 +20,7 @@ public class StudentMainPage extends AppCompatActivity {
 //    int user_id=sp.getInt("userid",0);
     private SectionsPagerAdapter mSectionsPagerAdapter;
     public static final ArrayList<String> ExamNames=new ArrayList<>();
-    public static final ArrayList<Integer> Request_status=new ArrayList<>();
+    public static final ArrayList<String> Request_status=new ArrayList<>();
 
     static String examName;
     private ViewPager mViewPager;
@@ -63,7 +33,7 @@ public class StudentMainPage extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         // Create the adapter that will return a fragment for each of the three
-        // primary sections of the activity.
+        // primary sections of the ac
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
 
         // Set up the ViewPager with the sections adapter.
@@ -74,9 +44,6 @@ public class StudentMainPage extends AppCompatActivity {
         tabLayout.setupWithViewPager(mViewPager);
 
     }
-
-
-
 
 
     @Override
@@ -131,16 +98,16 @@ public class StudentMainPage extends AppCompatActivity {
         public Fragment getItem(int position) {
             // getItem is called to instantiate the fragment for the given page.
             // Return a PlaceholderFragment (defined as a static inner class below).
+            Request r=new Request();
             switch(position){
                 case 0:
-                    Request r=new Request();
                     return r;
                 case 1:
                     Upcoming u=new Upcoming();
                     return u;
 
             }
-            return PlaceholderFragment.newInstance(position + 1);
+            return r;
         }
 
         @Override
